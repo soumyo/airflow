@@ -106,10 +106,10 @@ jobs:
         BACKEND=sqlite
         PYTHON_VERSION=3.6
       stage: test
-    - name: "Tests [MySQL][3.6][integrations]"
+    - name: "Tests [MySQL][5.7][integrations]"
       env: >-
         BACKEND=mysql
-        PYTHON_VERSION=3.6
+        PYTHON_VERSION=3.7
         ENABLED_INTEGRATIONS="cassandra kerberos mongo openldap rabbitmq redis"
         RUN_INTEGRATION_TESTS=all
       stage: test
